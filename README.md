@@ -15,11 +15,14 @@ An end-to-end and API automation testing suite built with Playwright and TypeScr
 Run the following commands in your terminal to install dependencies, and download the required Playwright browsers:
 
 # Install Node dependencies
+```bash
 npm install
+```
 
 # Install Playwright browsers (Chromium, Firefox, WebKit)
+```bash
 npx playwright install --with-deps
-\`\`\`
+```
 
 ### 2. Run Instructions
 # Environment Setup
@@ -33,24 +36,24 @@ Before running the tests, you must set up your local environment variables. The 
 You can run the tests using the npm scripts configured in `package.json`. 
 
 **Run the Entire Suite (API & UI concurrently):**
-\`\`\`bash
+```bash
 npm test
-\`\`\`
+```
 
 **Run Only API Tests:**
-\`\`\`bash
+```bash
 npm run test:api
-\`\`\`
+```
 
 **Run Only UI Tests (Using Mock Frontend):**
-\`\`\`bash
+```bash
 npm run test:ui
-\`\`\`
+```
 
 **View the HTML Test Report:**
-\`\`\`bash
+```bash
 npm run report
-\`\`\`
+```
 
 ---
 
@@ -73,9 +76,9 @@ The framework supports dynamic environment execution to seamlessly switch betwee
 To select an environment during execution, prepend `TEST_ENV=<env_name>` to your test command. If omitted, the suite defaults to `local`.
 
 **Example: Running API tests against the staging environment:**
-\`\`\`bash
+```bash
 TEST_ENV=staging npm run test:api
-\`\`\`
+```
 
 ---
 
