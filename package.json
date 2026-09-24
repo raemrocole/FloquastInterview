@@ -1,0 +1,17 @@
+{
+  "name": "qa-automation-framework",
+  "version": "1.0.0",
+  "description": "Test automation framework for fintech microservices",
+  "scripts": {
+    "test": "playwright test",
+    "test:api": "playwright test --project=API",
+    "test:ui": "playwright test --project=UI",
+    "report": "playwright show-report"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.63.0",
+    "@types/node": "^20.19.43",
+    "dotenv": "^16.6.1",
+    "typescript": "^5.9.3"
+  }
+}
